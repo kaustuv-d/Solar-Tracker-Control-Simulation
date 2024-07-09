@@ -6,3 +6,4 @@ This is a design and implementation of a controller to control the axis of a sol
 - Elevation (Altitude) Axis: The elevation axis enables vertical movement of the solar panels. Adjustments along this axis change the tilt of the panels to match the sun's elevation in the sky, which varies with the time of day and seasons.
 
 
+HI HELLO
