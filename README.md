@@ -25,7 +25,7 @@ A Stateflow chart is implemented to manage the solar tracker’s operational mod
 
 To optimize the energy output of the solar panels, an MPPT algorithm is integrated into the system. The MPPT algorithm continuously adjusts the electrical operating point of the modules to ensure they operate at their maximum power point. This is crucial for extracting the maximum possible energy from the solar panels under varying environmental conditions, thereby enhancing the overall efficiency of the solar tracker system.
 
-** Battery Energy Storage System (BESS): **
+**Battery Energy Storage System (BESS)**:
 
  This system is designed to integrate a solar PV system with a battery energy storage system (BESS) to optimize energy usage and improve system resilience. The main components of the system include a photovoltaic (PV) array, a battery, and control algorithms for charging and discharging the battery based on the PV power generation, load demand, and the state of charge (SoC) of the battery.
 
