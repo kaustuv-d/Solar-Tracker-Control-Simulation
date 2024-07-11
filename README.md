@@ -11,6 +11,9 @@ This is a design and implementation of a controller to control the axis of a sol
 
 We used the solar tracker model of "Using the Worm and Gear Constraint Block - Solar Tracker" example from Simscape™ Multibody™. The model takes latitude, longitude, and the current time as its input and updates the position of the solar panel.
 
+#### Worm and Gear Constraint Block - Solar Tracker
+![WnG](WormAndGearModel/Worm&gearConstraint.png)
+
 **Control System Design:**
 
 To effectively manage the solar tracker, integrating control systems such as PID controllers is crucial. These controllers adjust the yaw and pitch angles of the solar panels to ensure they are always optimally oriented towards the sun. The PID controllers take the difference between the desired and actual angles and adjust the motor voltage accordingly to minimize this difference, thereby optimizing the solar panel's orientation and maximizing energy capture.
