@@ -7,7 +7,7 @@ This is a design and implementation of a controller to control the axis of a sol
 
 ## Project Implementation
 
-We used the solar tracker model of "Using the Worm and Gear Constraint Block - Solar Tracker" example from Simscape™ Multibody™. 
+We used the solar tracker model of "Using the Worm and Gear Constraint Block - Solar Tracker" example from Simscape™ Multibody™. The model takes latitude , longitude and the current time as its input and updates the position of the soalr panel.
 
 **Control System Design :**
 
@@ -16,6 +16,10 @@ To effectively manage the solar tracker, integrating control systems such as PID
 **Implementing MATLAB Functions for Solar Position Calculation :**
 
 A MATLAB function is employed to calculate the yaw and pitch angles required for the solar tracker. This function utilizes the Solar Position Algorithm (SPA) to compute the solar azimuth and zenith angles based on the geographic location and time. The calculated angles are then used as inputs to the PID controllers, ensuring that the solar panels are accurately aligned with the sun's position throughout the day.
+
+**Solar Irradiance Data** 
+
+Before running the simulink model load the solardata.mata file into the base workspace . This file contains the data of the solar irradiance at a place recorded at a interval of every two minutes. A MATLAB function is implemented to convert the current time vector into the index to access the solar irradiance data from the file. 
 
 **Stateflow Algorithm for Energy Optimization:**
 
