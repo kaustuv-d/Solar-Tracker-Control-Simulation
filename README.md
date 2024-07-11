@@ -7,19 +7,19 @@ This is a design and implementation of a controller to control the axis of a sol
 
 ## Project Implementation
 
-We used the solar tracker model of "Using the Worm and Gear Constraint Block - Solar Tracker" example from Simscape™ Multibody™. The model takes latitude , longitude and the current time as its input and updates the position of the soalr panel.
+We used the solar tracker model of "Using the Worm and Gear Constraint Block - Solar Tracker" example from Simscape™ Multibody™. The model takes latitude, longitude, and the current time as its input and updates the position of the solar panel.
 
-**Control System Design :**
+**Control System Design:**
 
 To effectively manage the solar tracker, integrating control systems such as PID controllers is crucial. These controllers adjust the yaw and pitch angles of the solar panels to ensure they are always optimally oriented towards the sun. The PID controllers take the difference between the desired and actual angles and adjust the motor voltage accordingly to minimize this difference, thereby optimizing the solar panel's orientation and maximizing energy capture.
 
-**Implementing MATLAB Functions for Solar Position Calculation :**
+**Implementing MATLAB Functions for Solar Position Calculation:**
 
-A MATLAB function is employed to calculate the yaw and pitch angles required for the solar tracker. This function utilizes the Solar Position Algorithm (SPA) to compute the solar azimuth and zenith angles based on the geographic location and time. The calculated angles are then used as inputs to the PID controllers, ensuring that the solar panels are accurately aligned with the sun's position throughout the day.
+A MATLAB function calculates the yaw and pitch angles required for the solar tracker. This function utilizes the Solar Position Algorithm (SPA) to compute the solar azimuth and zenith angles based on the geographic location and time. The calculated angles are then used as inputs to the PID controllers, ensuring that the solar panels accurately align with the sun's position throughout the day.
 
 **Solar Irradiance Data** 
 
-Before running the simulink model load the solardata.mata file into the base workspace . This file contains the data of the solar irradiance at a place recorded at a interval of every two minutes. A MATLAB function is implemented to convert the current time vector into the index to access the solar irradiance data from the file. 
+Before running the Simulink model load the solardata.mata file into the base workspace. This file contains the solar irradiance data at a place recorded at an interval of every two minutes. A MATLAB function is implemented to convert the current time vector into the index to access the solar irradiance data from the file. 
 
 **Stateflow Algorithm for Energy Optimization:**
 
@@ -28,6 +28,9 @@ A Stateflow chart is implemented to manage the solar tracker’s operational mod
 **Maximum Power Point Tracking (MPPT) Algorithm:**
 
 To optimize the energy output of the solar panels, an MPPT algorithm is integrated into the system. The MPPT algorithm continuously adjusts the electrical operating point of the modules to ensure they operate at their maximum power point. This is crucial for extracting the maximum possible energy from the solar panels under varying environmental conditions, thereby enhancing the overall efficiency of the solar tracker system.
+For a practical demonstration of the Maximum Power Point Tracking (MPPT) algorithm using the Perturb and Observe method, check out this interactive demo provided by MathWorks:
+[MPPT Perturb & Observe Interactive Demo](https://in.mathworks.com/matlabcentral/fileexchange/72796-mppt-perturb-observe-interactive-demo?s_tid=srchtitle_support_results_2_mppt%2520function).
+This provides a hands-on experience to understand the workings and benefits of the MPPT algorithm in photovoltaic systems.
 
 **Battery Energy Storage System (BESS)**:
 
