@@ -24,7 +24,12 @@ A MATLAB function calculates the yaw and pitch angles required for the solar tra
 
 ### Solar Irradiance Data 
 
-Before running the Simulink model load the solardata.mata file into the base workspace. This file contains the solar irradiance data at a place recorded at an interval of every two minutes. A MATLAB function is implemented to convert the current time vector into the index to access the solar irradiance data from the file. 
+In this project, solar irradiance data was collected from NASA website using their API, providing a comprehensive dataset for 30 diverse locations across the globe. The data spans an entire year, from January 1, 2022, to December 31, 2022, with hourly measurements for each location. This detailed dataset was carefully preprocessed to ensure accuracy and consistency, which is crucial for training robust models.
+
+After preprocessing, the Neural Net Fitting App in MATLAB was employed to develop an artificial neural network (ANN). This ANN was designed to predict solar irradiance based on key input parameters: latitude, longitude, month, day, and hour. By training on the gathered data, the ANN was able to learn the complex relationships between these inputs and solar irradiance, capturing both temporal and spatial variations.
+
+The trained neural network serves as a predictive model, enabling the estimation of solar irradiance at any given location and time. This capability is vital for optimizing solar energy systems, as it helps in forecasting energy production and improving the efficiency of solar panels. The neural net showcases the integration of data acquisition, preprocessing, and advanced machine learning techniques to solve a real-world problem in renewable energy. The comprehensive approach ensures that the model is both accurate and generalizable, making it a valuable tool for researchers and practitioners in the field of solar energy.
+
 
 ### Stateflow Algorithm for Energy Optimization: ###
 
