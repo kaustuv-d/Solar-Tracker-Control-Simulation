@@ -37,10 +37,9 @@ A Stateflow chart is implemented to manage the solar tracker’s operational mod
 
 ### Maximum Power Point Tracking (MPPT) Algorithm: ###
 
-To optimize the energy output of the solar panels, an MPPT algorithm is integrated into the system. The ***MPPT algorithm*** continuously adjusts the electrical operating point of the modules to ensure they operate at their maximum power point. This is crucial for extracting the maximum possible energy from the solar panels under varying environmental conditions, thereby enhancing the overall efficiency of the solar tracker system.
-For a practical demonstration of the Maximum Power Point Tracking (MPPT) algorithm using the Perturb and Observe method, check out this interactive demo provided by MathWorks:
-[MPPT Perturb & Observe Interactive Demo](https://in.mathworks.com/matlabcentral/fileexchange/72796-mppt-perturb-observe-interactive-demo?s_tid=srchtitle_support_results_2_mppt%2520function).
-This provides a hands-on experience to understand the workings and benefits of the MPPT algorithm in photovoltaic systems.
+To optimize the energy output of the solar panels, an MPPT algorithm is integrated into the system. The ***MPPT algorithm*** continuously adjusts the electrical operating point of the modules to ensure they operate at their maximum power point. This is crucial for extracting the maximum possible energy from the solar panels under varying environmental conditions, thereby enhancing the overall efficiency of the solar tracker system.We use the P&O technique of the MPPT algorithm. 
+
+The Perturb and Observe method has a simple feedback structure and few measured parameters. It operates by periodically perturbing (i.e. incrementing or decrementing) the duty cycle controlling the array current  and comparing the PV output power with that of the previous perturbation cycle. If the perturbation leads to an increase (or decrease) in array power, the subsequent perturbation is made in the same (or opposite) direction. In this manner, the peak power tracker continuously seeks the peak power condition.
 
 **Battery Energy Storage System (BESS)**:
 
