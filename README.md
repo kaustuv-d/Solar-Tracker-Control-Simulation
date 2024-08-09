@@ -1,5 +1,4 @@
 # Solar-Tracker-Control-Simulation
-![Working of Solar Tracker System](Solar_Tracker_working.gif)
 <img src="Solar_Tracker_working.gif" alt="Demo of the solar tracker system" width="500">
 
 
