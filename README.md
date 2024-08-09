@@ -81,6 +81,10 @@ This system is designed to integrate a solar PV system with a ***battery energy 
 6. Run the simulation.
 
 ---
+## References:
+1. MPPT Algorithm: https://in.mathworks.com/matlabcentral/fileexchange/72796-mppt-perturb-observe-interactive-demo?s_tid=FX_rc1_behav
+2. Fixed VS Solar Tracker:  https://in.mathworks.com/matlabcentral/fileexchange/123655-fixed-vs-tracking-solar-panel-output-comparison-in-simulink?s_tid=FX_rc2_behav
+3. Solar Irradiance Data: https://power.larc.nasa.gov/data-access-viewer/
 
  
 ## 👥 Contributors
