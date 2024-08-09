@@ -36,15 +36,20 @@ The trained neural network serves as a predictive model, enabling the estimation
 
 A Stateflow chart is implemented to manage the solar tracker’s operational modes: Daytime Mode, Night-time Mode, and Cloudy Mode. In ***Daytime Mode***, the system continuously adjusts to follow the sun. In ***Night-time Mode***, the tracker moves to a default position to minimize wear and tear. During ***Cloudy Mode***, the tracker holds its current position to save energy, as precise tracking is less critical. These modes are controlled by state transitions based on real-time inputs such as sunlight intensity and time of day, ensuring the system adapts dynamically to varying conditions.
 
+![Stateflow Logic implementation](stateflow_logic.jpg)
+
 ### Maximum Power Point Tracking (MPPT) Algorithm: ###
 
 To optimize the energy output of the solar panels, an MPPT algorithm is integrated into the system. The ***MPPT algorithm*** continuously adjusts the electrical operating point of the modules to ensure they operate at their maximum power point. This is crucial for extracting the maximum possible energy from the solar panels under varying environmental conditions, thereby enhancing the overall efficiency of the solar tracker system.We use the P&O technique of the MPPT algorithm. 
 
 The Perturb and Observe method has a simple feedback structure and few measured parameters. It operates by periodically perturbing (i.e. incrementing or decrementing) the duty cycle controlling the array current  and comparing the PV output power with that of the previous perturbation cycle. If the perturbation leads to an increase (or decrease) in array power, the subsequent perturbation is made in the same (or opposite) direction. In this manner, the peak power tracker continuously seeks the peak power condition.
 
-**Battery Energy Storage System (BESS)**:
+### Battery Energy Storage System (BESS): ###
+This system is designed to integrate a solar PV system with a ***battery energy storage system (BESS)*** to optimize energy usage and improve system resilience. The main components of the system include a photovoltaic (PV) array, a battery, and control algorithms for charging and discharging the battery based on the PV power generation, load demand, and the state of charge (SoC) of the battery.
 
- This system is designed to integrate a solar PV system with a ***battery energy storage system (BESS)*** to optimize energy usage and improve system resilience. The main components of the system include a photovoltaic (PV) array, a battery, and control algorithms for charging and discharging the battery based on the PV power generation, load demand, and the state of charge (SoC) of the battery.
+## Voltage Variation with Current and Power ##
+![graph](powervsV_solar.jpg)
+ 
 ## Contributors
 - Kshitij Amarnath Shetty, Mechanical Engineering Dept., IIT Indore
 - Kaustuv Devmishra, Mechanical Engineering Dept., IIT Indore
