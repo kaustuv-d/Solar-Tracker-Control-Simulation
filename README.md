@@ -1,5 +1,5 @@
 # Solar-Tracker-Control-Simulation
-<img src="Solar_Tracker_working.gif" alt="Demo of the solar tracker system" width="500">
+<img src="Solar_Tracker_working.gif" alt="Demo of the solar tracker system" width="1000">
 
 
 ## Description
