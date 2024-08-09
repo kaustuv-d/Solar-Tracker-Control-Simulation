@@ -53,9 +53,10 @@ An MPPT algorithm is integrated into the system to optimize the energy output of
 
 The Perturb and Observe method has a simple feedback structure and few measured parameters. It operates by periodically perturbing (i.e. incrementing or decrementing) the duty cycle controlling the array current  and comparing the PV output power with that of the previous perturbation cycle. If the perturbation leads to an increase (or decrease) in array power, the subsequent perturbation is made in the same (or opposite) direction. In this manner, the peak power tracker continuously seeks the peak power condition.
 <p align="center">
-  <img src="mppt01.jpg" alt="MPPT Algorithm 1">
-  <img src="mppt02.jpg" alt="MPPT Algorithm 2">
+  <img src="mppt_01.jpg" alt="MPPT Algorithm 1">
+  <img src="mppt_02.jpg" alt="MPPT Algorithm 2">
 </p>
+
 
 ### 🔋 Battery Energy Storage System (BESS)
 This system is designed to integrate a solar PV system with a ***battery energy storage system (BESS)*** to optimize energy usage and improve system resilience. The main components of the system include a photovoltaic (PV) array, a battery, and control algorithms for charging and discharging the battery based on the PV power generation, load demand, and the state of charge (SoC) of the battery.
@@ -82,18 +83,10 @@ This system is designed to integrate a solar PV system with a ***battery energy 
 ---
 
  
-## Contributors
+## 👥 Contributors
 - Kshitij Amarnath Shetty, Mechanical Engineering Dept., IIT Indore
 - Kaustuv Devmishra, Mechanical Engineering Dept., IIT Indore
 - Krishan Swami, Mechanical Engineering Dept., IIT Indore
 - Mihir Hemani, Mechanical Engineering Dept., IIT Indore
 
-
-
-
-👥 Contributors
-Kshitij Amarnath Shetty - Mechanical Engineering Dept., IIT Indore
-Kaustuv Devmishra - Mechanical Engineering Dept., IIT Indore
-Krishan Swami - Mechanical Engineering Dept., IIT Indore
-Mihir Hemani - Mechanical Engineering Dept., IIT Indore
   
