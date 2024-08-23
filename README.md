@@ -1,8 +1,7 @@
 # 🌞 Solar-Tracker-Control-Simulation 🌍
 
-<p align="center">
-  <img src="Solar_Tracker_working.gif" alt="Demo of the solar tracker system">
-</p>
+
+![gif preview](Solar_gif_1.gif)
 
 ---
 
