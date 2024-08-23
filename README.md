@@ -12,6 +12,7 @@ This is a design and implementation of a controller to control the axis of a sol
 <p align="center">
   <img src="ps_description.jpg" alt="description">
 </p>
+
 ### 🌍 Geographic Influence on Solar Tracking
 - ***Azimuth Axis***: This axis allows the solar tracker to rotate horizontally. The movement along this axis aligns the solar panels with the sun's position from east to west throughout the day. Control of the azimuth axis is essential for following the sun's apparent motion across the sky, which is primarily due to the Earth's rotation.
 - ***Elevation (Altitude) Axis***: The elevation axis enables vertical movement of the solar panels. Adjustments along this axis change the tilt of the panels to match the sun's elevation in the sky, which varies with the time of day and seasons.
